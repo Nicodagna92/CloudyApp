@@ -1,0 +1,79 @@
+.box-viento{
+    grid-area: box-6;
+}
+.viento-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* INFO SUPERIOR */
+
+.viento-actual {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.viento-card {
+    background-color: rgba(112, 112, 112, 0.116);
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: transform 0.2s ease;
+}
+
+.viento-card:hover {
+    transform: translateY(-3px);
+}
+
+.viento-label {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.viento-valor {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* EVOLUCION */
+
+.viento-evolucion {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1rem;
+    height: 140px;
+}
+
+.viento-hora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.hora-viento {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.barra-viento {
+    width: 22px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 20px 20px 4px 4px;
+    transition: 0.2s ease;
+}
+
+.barra-viento:hover {
+    transform: scaleY(1.08);
+}
+
+.valor-viento {
+    font-size: 0.9rem;
+    font-weight: bold;
+}

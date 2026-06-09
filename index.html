@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>- CloudyApp - Weather information worldwide.</title>
+</head>
+<body>
+    <div class="layout-container">
+    
+<!---------------------------------->
+<!-- SIDEBAR -->
+<!---------------------------------->
+    
+        <aside class="sidebar">
+                <div class="sidebar-top">
+                    <h1 class="sidebar-logo">- CloudyApp -</h1>
+                    <!-- BUSCADOR -->
+                    <div class="search-container">
+                        <input 
+                            type="text"
+                            class="search-input"
+                            id="searchInput"
+                            placeholder="Buscar ciudad..."
+                        >
+                        <button class="search-btn" id="searchBtn">
+                            🔍
+                        </button>
+                    </div>
+                </div>
+                <!-- FAVORITAS -->
+                <div class="favoritas-container">
+                    <h2 class="favoritas-title">Favoritas (proximamente)</h2>
+                </div>
+        </aside>
+
+
+<!---------------------------------->
+<!-- APP CONTAINER -->
+<!---------------------------------->    
+        <div class="app-container oculto" id="appContainer">
+            <div class="grid-container">
+
+    <!-- En esta caja vamos a mostrar el nombre de la ciudad, temp y simbolo de clima-->
+                <div class="grid-box box-actual" id="boxActual">
+                </div>
+
+    <!--EN ESTA CAJA VA A IR EL PRONOSTICO DEL DIA POR HORAS--->
+                <div class="grid-box box-horas fondo">
+                    <div class="horas-container" id="horasContainer">
+                    </div>
+                </div>
+
+    <!--EN ESTA CAJA VAN DATOS DEL DIA, HUMEDAD, ST, DATOS DEL VIENTO, PRESION ATM. --->
+                <div class="grid-box box-detalles fondo">
+                    <div class="detalles-container" id="detallesContainer">
+                    </div>
+                </div>
+
+    <!--EN ESTA CAJA VA A IR EL PRONOSTICO EXTENDIDO DE LA SEMANA-->
+                <div class="grid-box pronostico-semanal box-semana fondo">
+                    <div class="semana-container" id="semanaContainer">
+                    </div>
+                </div>
+
+            
+    <!--EN ESTA CAJA VAN A IR LOS DATOS DEL VIENTO Y LA EVOLUCION DIARIA -->
+                <div class="grid-box box-viento fondo">
+                    <div class="viento-container" id="vientoContainer">           
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+.pronostico-semanal {
+    display: flex;
+    align-items: flex-start;
+}
+
+.semana-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    width: 100%;
+}
+
+.dia-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 0.8rem;
+    border-radius: 12px;
+    transition: transform 0.2s;
+}
+
+.dia-card:hover {
+    transform: translateY(-4px);
+    background-color:rgba(141, 136, 136, 0.062) ;
+}
+
+.dia-nombre {
+    font-weight: bold;
+    font-size: 0.95rem;
+    text-align: left;
+}
+
+.dia-clima {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.dia-icono {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.dia-desc {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.dia-temp {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.temp-max {
+    font-weight: bold;
+}
+
+.temp-min {
+    opacity: 0.6;
+}
+.box-semana{
+    grid-area: box-5;
+}

@@ -1,0 +1,41 @@
+.horas-container {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding: 0.5rem;
+}
+
+.hora-card {
+    min-width: 70px;
+    border-radius: 12px;
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    transition: transform 0.2s ease;
+}
+
+.hora-card:hover {
+    background-color:rgba(141, 136, 136, 0.062) ;
+    transform: translateY(-4px);
+}
+
+.hora {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.hora-icono img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.hora-temp {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.box-horas{
+    grid-area: box-3;
+}

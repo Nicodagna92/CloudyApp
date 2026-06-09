@@ -1,0 +1,18 @@
+@import url("./variables.css");
+
+@import url("./layout.css");
+
+@import url("./utilidades.css");
+
+@import url("./componentes/sidebar.css");
+@import url("./componentes/climaActual.css");
+@import url("./componentes/pronosticoHoras.css");
+@import url("./componentes/detalle.css");
+@import url("./componentes/pronosticoSemanal.css");
+@import url("./componentes/viento.css");
+
+@import url("./responsive.css");
+* {
+    box-sizing: border-box;
+}
+

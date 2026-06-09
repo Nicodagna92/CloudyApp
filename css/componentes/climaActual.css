@@ -1,0 +1,47 @@
+.clima-actual-box {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    height: 100%;
+}
+.clima-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.clima-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.clima-ciudad {
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    gap: 0.5rem;
+    align-items: baseline;
+}
+
+.ciudad {
+    font-weight: bold;
+}
+
+.pais {
+    font-size: 1.1rem;
+    opacity: 0.5;
+}
+
+.clima-temperatura {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.clima-icono-grande img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+}
+.box-actual{
+    grid-area: box-2;
+}

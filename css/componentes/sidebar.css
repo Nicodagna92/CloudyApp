@@ -1,0 +1,85 @@
+.sidebar {
+    width: 280px;
+    background-color: rgba(24, 24, 24, 0.26);
+    margin-top: 0.9rem;
+    height: fit-content;
+    min-height: 96vh;
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 12px;
+}
+
+.sidebar-top {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sidebar-logo {
+    color: white;
+    font-size: 1.8rem;
+}
+
+/* SEARCH */
+
+.search-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.search-input {
+    flex: 1;
+    padding: 0.2rem;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    background-color: rgba(107, 105, 105, 0.062);
+    color: white;
+}
+
+.search-input::placeholder {
+    color: rgba(255,255,255,0.5);
+}
+
+.search-btn {
+    border: none;
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.08);
+    color: white;
+    transition: 0.2s;
+}
+
+.search-btn:hover {
+    background-color: rgba(255,255,255,0.15);
+}
+
+/* FAVORITAS */
+
+.favoritas-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.favoritas-title {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.favorita-item {
+    padding: 0.8rem;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.04);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.favorita-item:hover {
+    background-color: rgba(255,255,255,0.1);
+}

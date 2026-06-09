@@ -1,0 +1,31 @@
+:root {
+
+    --color-fondo-principal: #afa9a5;
+    --color-fondo-secundario: #967c5b;
+
+    --gradiente-fondo:
+        linear-gradient(
+            135deg,
+            #383838,
+            #050505
+        );
+
+    --gradiente-sidebar:
+        linear-gradient(
+            135deg,
+            #000000,
+            #928e8e
+        );
+
+    --color-navbar-bg: #2d3d57;
+    --color-navbar-texto: #f8fafc;
+    --color-navbar-secundario: #94a3b8;
+
+    --padding-navbar: 1rem 2rem;
+    --altura-navbar: 5vh;
+
+    --fuente-principal:
+        Arial,
+        sans-serif;
+
+}
